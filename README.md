@@ -1,4 +1,4 @@
-# Coffee Shop
+# Prime Coffee
 
 A modern, responsive coffee shop website built with **React**, **Vite**, and **Tailwind CSS**. The project focuses on delivering a visually engaging user experience through clean layouts, reusable React components, responsive design principles, and smooth UI animations.
 
@@ -90,22 +90,12 @@ The project is deployed on Vercel.
 **Website**
 
 ```
-Add your Vercel URL here after deployment.
+https://coffee-shop-xi-virid.vercel.app/
 ```
 
 ---
 
-## Screenshots
 
-Add screenshots of the application after deployment.
-
-Example:
-
-```
-preview.png
-```
-
----
 
 ## Future Improvements
 
@@ -120,11 +110,11 @@ preview.png
 
 ## Author
 
-**Muhammad Muawaz**
+**Muhammad Muawaz "MHCoding" **
 
 GitHub: https://github.com/themhcoding
 
-LinkedIn: *(Add your LinkedIn profile here)*
+
 
 ---
 
