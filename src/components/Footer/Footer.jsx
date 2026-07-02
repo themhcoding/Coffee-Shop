@@ -25,13 +25,13 @@ const bgImage = {
 const Footer = () => {
   return (
     <div style={bgImage} className="w-full mt-16">
-      <div className="bg-black/40 w-full min-h-[500px]">
-        <div className="container grid md:grid-cols-3 pb-20 pt-5">
+      <div className="bg-black/40 w-full min-h-[500px] md:min-h-[500px] min-h-[850px]">
+        <div className="container grid grid-cols-1 md:grid-cols-3 pt-16 pb-32 gap-y-4">
           {/* DETAILS */}
-          <div className="ml-16 py-8 px-4">
+          <div className="ml-4 md:ml-16 py-8 px-4">
             <a
               href="#"
-              className="text-6xl text-white font-semibold tracking-widest sm:text-5xl md:text-6xl font-cursive"
+              className="text-4xl md:text-6xl text-white font-semibold tracking-widest font-cursive"
             >
               Prime Coffee
             </a>
@@ -50,9 +50,9 @@ const Footer = () => {
           </div>
 
           {/* FOOTER LINKS */}
-          <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
-            <div className="py-8 px-4">
-              <h1 className="text-2xl font-semibold sm:text-left mb-3 mt-5 text-white/100">
+          <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 md:pl-10 px-4">
+            <div className="pt-1 pb-4 px-4 md:py-8">
+              <h1 className="text-2xl font-semibold sm:text-left mb-3  text-white/100">
                 Footer Links
               </h1>
 
@@ -71,8 +71,8 @@ const Footer = () => {
             </div>
             {/* QUICK LINKS */}
 
-            <div className="py-8 px-4">
-              <h1 className="text-2xl font-semibold sm:text-left mb-3 mt-5 text-white/100">
+            <div className="pt-1 pb-4 px-4 md:py-8">
+              <h1 className="text-2xl font-semibold sm:text-left mb-3  text-white/100">
                 Quick Links
               </h1>
 
@@ -92,7 +92,7 @@ const Footer = () => {
 
             {/* ADDRESS */}
 
-            <div className="py-8 px-4 col-span-2 sm:col-auto mt-5">
+            <div className="pt-2 px-4 col-span-2 sm:col-auto md:py-8">
               <h1 className="text-2xl font-semibold ssm:text-left mb-3 text-white">
                 Address
               </h1>

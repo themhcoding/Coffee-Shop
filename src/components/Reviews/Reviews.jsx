@@ -85,40 +85,32 @@ const Reviews = () => {
     arrows: false,
     infinite: true,
     speed: 500,
+    slidesToShow: 3,       // Desktop: 3 cards
     slidesToScroll: 1,
-    slidesToShow: 3,
     autoplay: true,
-    centerMode: true,
-    centerPadding: "0px",
     autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
     responsive: [
       {
-        breakpoint: 10000,
+        breakpoint: 1024,   // Screens smaller than 1024px (Tablets)
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
+          slidesToShow: 2,   // Shows exactly 2 cards
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 768,    // Screens smaller than 768px (All Phones & Small Tablets)
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1,   // Forces exactly 1 card
           slidesToScroll: 1,
+          centerMode: false, // Prevents layout squishing bugs on mobile
         },
       },
     ],
   };
+  
 
   return (
     <div ref={reviewsRef} className="py-10 overflow-hidden">
@@ -154,7 +146,7 @@ const Reviews = () => {
                   }
                 `}
               >
-                <div className="flex flex-col gap-2 shadow-lg py-5 px-6 mx-4 rounded-xl bg-primary/10 relative h-full min-h-[220px]">
+                <div className="flex flex-col gap-2 shadow-lg py-5 px-6 rounded-xl bg-primary/10 relative h-full min-h-[220px]">
 
                   {/* IMAGE */}
                   <div className="mb-4">

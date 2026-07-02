@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import img2 from "../../assets/coffee4.png";
+import img2 from "../../assets/coffee4.webp";
 
 const ServicesData = [
   {

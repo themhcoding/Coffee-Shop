@@ -87,7 +87,7 @@ const Banner = () => {
       className="py-16 text-white overflow-hidden scroll-mt-24"
     >
       <div className="max-w-[1200px] mx-auto px-4 min-h-[550px] flex justify-center items-center py-12 sm:py-0">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-6 items-center w-full">
           
           {/* IMAGE SECTION */}
           <div className="flex justify-end">
@@ -108,13 +108,18 @@ const Banner = () => {
           {/* TEXT SECTION */}
           <div>
             <h1
-              className={`text-4xl mb-4 text-black font-logo whitespace-nowrap animate-pulse transform transition-all duration-1000 ease-out ${
+              className={`text-3xl sm:text-4xl mb-4 text-black font-logo leading-tight animate-pulse transform transition-all duration-1000 ease-out ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
               }`}
             >
-              Brewed to Perfection, Served with Passion
+              <>
+  Brewed to Perfection,
+  <br className="block sm:hidden" />
+  <span className="hidden sm:inline"> </span>
+  Served with Passion
+</>
             </h1>
 
             <p
